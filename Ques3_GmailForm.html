@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1_Q3</title>
+    <style>
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%; 
+            min-height: 100%;
+            z-index: -1;
+        }
+        form{
+            margin: auto;
+            margin-top: 150px;
+            width: 20%;
+            border: 1px solid white;
+            padding: 10px 30px;
+        }
+        .user_input{
+            width: 100%;
+            margin-bottom: 30px;
+            height: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 18px;
+            border: none;
+        }
+        .user_input:hover{
+            background-color: rgb(70, 130, 180,0.35);
+        }
+        .bottom{
+            height: 40px;
+            width: 80px;
+            margin-left: 20px;
+            background-color: rgb(164, 83, 204);
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+    </video>
+    <form action="action.html">
+        <h2>Create Gmail Account</h2>
+        <input type="text" id="fullname" name="fullname" class="user_input" placeholder="Full Name"><br>
+        <input type="number" id="contact" name="contact" class="user_input" placeholder="Contact Number">
+        <input type="email" id="email" name="email" class="user_input" placeholder="Enter email id">
+        <input type="reset" value="Reset" class="bottom">
+        <input type="submit" value="Submit" class="bottom">
+    </form>
+</body>
+</html>
